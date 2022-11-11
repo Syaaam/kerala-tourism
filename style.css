@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&family=Julius+Sans+One&family=Lato&family=Roboto&family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&family=Major+Mono+Display&family=Sacramento&display=swap');
+
+*/ * {
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   font-family: "Lato", Helvetica, Arial, sans-serif;
+   line-height: 1.7;
+   color: var(--body);
+}
+
+h1,
+h2,
+h4,
+h5,
+h6,
+.display-4 {
+   color: var(--dark);
+   font-weight: 700;
+}
+
+h4 {
+   text-transform: capitalize;
+}
+
+a {
+   color: var(--primary);
+   text-decoration: none;
+}
+
+*/ img {
+   width: 100%;
+}
+
+.logo {
+   width: 150px;
+}
+
+.nav-link {
+   font-family: "Lato", Helvetica, Arial, sans-serif;
+   color: #8AB6D6;
+   font-size: 15px;
+   font-weight: 600;
+   text-transform: uppercase;
+}
+
+.nav-link:hover {
+   color: #fff;
+}
+
+.hero {
+   background-image: url("img/bg1.jpg");
+   background-position: center;
+   background-size: cover;
+   background-attachment: fixed;
+   position: relative;
+   z-index: 2;
+}
+
+.hero::after {
+   content: "";
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   background-color: rgba(206, 205, 221, 0.2);
+   z-index: -1;
+}
+
+.heading {
+   font-family: 'Baloo Thambi 2', cursive;
+   text-transform: uppercase;
+   font-size: 25px;
+   font-weight: 700;
+}
+
+.sub-heading {
+   font-family: fantasy, monospace;
+
+}
+
+.quote {
+   color: #B5DEFF;
+   font-weight: 700;
+}
+
+.quote-text {
+   font-family: 'Julius Sans One', sans-serif;
+   font-weight: 900;
+}
+
+.quote-author {
+   font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+section {
+   padding-top: 120px;
+   padding-bottom: 120px;
+}
+
+.card-effect {
+   box-shadow: var(--box-shadow);
+   background-color: #fff;
+   padding: 25px;
+   transition: all 0.35s ease;
+}
+
+.card-effect:hover {
+   box-shadow: none;
+   transform: translateY(5px);
+}
+
+.iconbox {
+   width: 54px;
+   height: 54px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: var(--primary);
+   color: #fff;
+   font-size: 32px;
+   border-radius: 100px;
+   flex: none;
+}
+
+.district {
+   position: relative;
+   width: 100%;
+   height: 300px;
+   z-index: 2;
+   overflow: hidden;
+}
+
+.district h5 {
+   font-weight: 600;
+   color: #fff;
+}
+
+.district a {
+   text-decoration: none;
+}
+
+.district::after {
+   content: '';
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: -100%;
+   left: 0;
+   background-color: #1F1D36;
+   z-index: -1;
+   opacity: 0;
+   transition: all 0.4s ease;
+}
+
+
+.district:hover .iconbox {
+   background-color: #fff;
+   color: var(--primary);
+}
+
+
+.district:hover h5,
+.district:hover p {
+   color: #fff;
+}
+
+.district:hover::after {
+   opacity: 1;
+   top: 0;
+}
+
+.district .district-bio {
+
+   opacity: 0;
+}
+
+.district:hover .district-bio {
+   opacity: 1;
+}
+
+#kasargod {
+   background-image: url("img/kasargod.jpg");
+   background-position: center;
+   background-size: cover;
+}
+
+#kannur {
+   background-image: url("img/kannur.jpg");
+   background-position: center;
+   background-size: cover;
+}
+
+#kozhikode {
+   background-image: url("img/kozhikode.jpg");
+   background-position: center;
+   background-size: cover;
+}
+
+#wayanad {
+   background-image: url("img/wayanad.jpg");
+   background-position: center;
+   background-size: cover;
+}
+
+#malapuram {
+   background-image: url("img/malappuram.jpg");
+   background-position: center;
+   background-size: cover;
+}
+
+#palakkad {
+   background-image: url("img/palakkad.jpg");
+   background-position: center;
+   background-size: cover;
+}
+
+#thrissur {
+   background-image: url("img/thrissur.jpg");
+   background-position: center;
+   background-size: cover;
+}
+
+#ernakulam {
+   background-image: url("img/ernakulam.jpg");
+   background-position: center;
+   background-size: cover;
+}
+
+#idukki {
+   background-image: url("img/idukki.jpg");
+   background-position: center;
+   background-size: cover;
+}
+
+#pathanamthitta {
+   background-image: url("img/pathanamthitta.jpg");
+   background-position: center;
+   background-size: cover;
+}
+
+#kottayam {
+   background-image: url("img/kottayam.jpg");
+   background-position: center;
+   background-size: cover;
+}
+
+#alappuzha {
+   background-image: url("img/alapuzha.jpg");
+   background-position: center;
+   background-size: cover;
+}
+
+#kollam {
+   background-image: url("img/kollam.jpg");
+   background-position: center;
+   background-size: cover;
+}
+
+#thiruvananthapuram {
+   background-image: url("img/thiruvananthapuram.jpg");
+   background-position: center;
+   background-size: cover;
+}
+
+.footer-top {
+   padding-top: 90px;
+   padding: 90px;
+   background-color: var(--dark);
+
+}
+
+.footer-top a {
+   color: var(--body);
+
+}
+
+.footer-top a:hover {
+   color: rgb(240, 59, 59);
+
+}
+
+.footer-bottom {
+   background-color: var(--dark);
+}
