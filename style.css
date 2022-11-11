@@ -185,6 +185,40 @@ section {
 
 #kasargod {
    background-image: url("img/kasargod.jpg");
+   .destination {
+    width: 100%;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+}
+
+.destination .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(21, 20, 51, 0.2);
+    padding: 30px;
+    display: flex;
+    align-items: flex-end;
+    transition: all 0.4s ease;
+    opacity: 0;
+}
+
+.destination img {
+    transition: all 0.4s ease;
+    min-height: 350px;
+
+}
+
+.destination:hover .overlay {
+    opacity: 1;
+}
+
+.destination:hover img {
+    transform: scale(1.1);
+}
    background-position: center;
    background-size: cover;
 }
